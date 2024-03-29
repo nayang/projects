@@ -1,0 +1,223 @@
+/*student name: Na Yang
+     student number: 040744984*/
+/*For all page*/
+
+body{
+    overflow-y: scroll;
+    background-color: lightgray;
+}
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a5a0a0;
+    /* Centers the header content horizontally */
+    text-align: center;
+    padding: 15px;
+     /* Keeps the header at the top of the viewport while scrolling */
+    position: fixed;
+    left:15px;
+    right:15px;
+}
+
+header a
+{
+    color:rgb(32, 32, 32);
+    font-weight: bold;
+    font-size: 35px;
+    /* Removes underline from links */
+    text-decoration: none;
+    padding: 35px;
+}
+
+
+footer{
+     /* Centers footer content */
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+.title{
+    color: black;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/*For the index page*/
+main{
+    margin-top: 90px;
+    text-align: center;
+    
+}
+.introduceM{
+    color: black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.my_description{
+    color: black;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 35px auto;
+    width: 70%;
+    line-height: 50px;
+}
+
+.link{
+    color: blue;
+}
+#pp{
+    margin: 20px auto;
+}
+/*For the resume page*/
+.resume_title_info{
+    color: black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #a5a0a0;
+    
+}
+
+.content_info{
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+.date{
+    /* Aligns dates to the right */
+    float: right;
+    margin: 5px;
+}
+.AC{
+    padding-left: 40px;
+}
+.BJ{
+    padding-left: 40px;
+}
+/*For the courses page*/
+.java_title{
+    color: black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.p{
+    margin-right: 50px;
+    float: left;
+}
+
+
+.course_container{
+    margin-top: 100px;
+    margin-left: 150px;
+    display: flex;
+    justify-content: left;
+}
+.course_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:0px;
+}
+
+
+/*For the contact page*/
+#contact{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-weight: bold;
+}
+
+#name
+{
+    margin-left: 35px;
+    height: 30px;
+    width: 600px;
+}
+#email
+{
+    margin-left: 37px;
+    height: 30px;
+    width: 600px;
+}
+
+#subject
+{
+    margin-left: 19px;
+    height: 30px;
+    width: 600px;
+}
+
+#massage
+{
+    margin-left: 6px;
+    height: 150px;
+    width: 600px;
+}
+#submit
+{
+    text-align: center;
+    background-color: #a5a0a0;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Adjusts the body overflow and background color for smaller screens */
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto;
+        background-color: lightgray;
+    }
+    header {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #a5a0a0;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        
+    }
+    header a {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .title, .introduceM, .resume_title_info, #java_title, #contact {
+        font-size: 24px;
+    }
+    .my_description, .content_info, .course_content {
+        font-size: 18px;
+        margin: 20px auto;
+        width: 90%;
+        line-height: 30px;
+    }
+    .course_container {
+        margin: 50px 20px;
+        flex-direction: column;
+    }
+    footer {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    #name, #email, #subject, #massage {
+        width: 90%;
+        margin: 10px auto;
+    }
+}

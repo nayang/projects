@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- student name: Na Yang
+     student number: 040744984-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="desctription" content="Contact">
+        <meta name="assignment1" content="4 page for assignment1">
+        <link rel="stylesheet" href="styles.css">
+        <title>Contact</title>
+    </head>
+    
+    <body>
+        <!-- Header section with navigation links -->
+        <header>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contact</a>
+        </header>
+        <br>
+        <!-- Main content area -->
+        <main>
+            <p class="title">Contact</p>
+        </main>
+<!-- Contact form that submits data to Contact.php using POST method -->
+        <form action="Contact.php" method="post" id="contact">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Na Yang" required><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" minlength="10" maxlength="20" required><br><br>
+            <!-- Textarea for message -->
+            <label for="massage">Massage</label>
+            <textarea id="massage" name="massage" minlength="80" maxlength="2000" rows="4" required></textarea><br><br>
+            <!-- Submit button for the form -->
+            <button type="submit" value="submit" id="submit">Submit</button>
+        </form>
+        <!-- Footer section with copyright information -->
+        <footer class="footer">
+            <p>Na Yang Jan-27-2024 copyright</p>
+        </footer>  
+    </body>
+</html>
